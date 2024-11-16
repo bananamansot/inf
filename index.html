@@ -3,53 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terminal Style Website</title>
+    <title>Information Display</title>
     <style>
         body {
-            background-color: #000;
-            color: #00FF00;
+            background-color: #181818;
+            color: #ffffff;
             font-family: 'Courier New', Courier, monospace;
-            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
         }
-        .terminal {
-            border: 2px solid #00FF00;
-            padding: 15px;
-            margin: 20px auto;
+        .info-box {
+            background-color: #181818;
+            border: 2px solid #bdbdbd;
+            padding: 20px;
+            border-radius: 15px;
             width: 80%;
             max-width: 800px;
-            box-shadow: 0 0 10px #00FF00;
-            overflow: auto;
+            box-shadow: 0 0 15px #fbff00;
         }
         .line {
             display: block;
-            margin-bottom: 5px;
-        }
-        .prompt {
-            color: #00FF00;
+            margin-bottom: 10px;
         }
         .input {
             display: inline-block;
             white-space: pre-wrap;
         }
-        .blinking-cursor {
-            display: inline-block;
-            width: 10px;
-            height: 20px;
-            background-color: #00FF00;
-            animation: blink 1s step-end infinite;
-        }
-        @keyframes blink {
-            50% {
-                opacity: 0;
-            }
-        }
     </style>
 </head>
 <body>
-    <div class="terminal">
-        <div class="line"><span class="prompt">user@web:~$</span> <span class="input">Hello, welcome to my terminal-style website!</span></div>
-        <div class="line"><span class="prompt">user@web:~$</span> <span class="input">Feel free to explore and type commands!</span></div>
-        <div class="line"><span class="prompt">user@web:~$</span> <span class="input"></span><span class="blinking-cursor"></span></div>
+    <div class="info-box">
+        <div class="line"><span class="input">Displaying Bitcoin addresses:</span></div>
+        <div class="line"><span class="input">1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa</span></div>
+        <div class="line"><span class="input">3J98t1WpEZ73CNmQviecrnyiWrnqRhWNLy</span></div>
+        <div class="line"><span class="input">bc1qw508d6qejxtdg4y5r3zarvary0c5xw7kygt080</span></div>
+        <div class="line"><span class="input">bc1p3x0a9z8emka5k8f6k9jlpz5r9upggwf7hvse4p</span></div>
+        <div class="line"><span class="input">3QJmV3qfvL9SuYo34YihAf3sRCW3qSinyC</span></div>
     </div>
 </body>
 </html>
