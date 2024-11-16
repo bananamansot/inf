@@ -1,1 +1,55 @@
-<h1>Hello!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal Style Website</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #00FF00;
+            font-family: 'Courier New', Courier, monospace;
+            padding: 20px;
+        }
+        .terminal {
+            border: 2px solid #00FF00;
+            padding: 15px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 800px;
+            box-shadow: 0 0 10px #00FF00;
+            overflow: auto;
+        }
+        .line {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .prompt {
+            color: #00FF00;
+        }
+        .input {
+            display: inline-block;
+            white-space: pre-wrap;
+        }
+        .blinking-cursor {
+            display: inline-block;
+            width: 10px;
+            height: 20px;
+            background-color: #00FF00;
+            animation: blink 1s step-end infinite;
+        }
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="terminal">
+        <div class="line"><span class="prompt">user@web:~$</span> <span class="input">Hello, welcome to my terminal-style website!</span></div>
+        <div class="line"><span class="prompt">user@web:~$</span> <span class="input">Feel free to explore and type commands!</span></div>
+        <div class="line"><span class="prompt">user@web:~$</span> <span class="input"></span><span class="blinking-cursor"></span></div>
+    </div>
+</body>
+</html>
